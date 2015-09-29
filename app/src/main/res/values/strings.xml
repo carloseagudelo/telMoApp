@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TelmoApp</string>
+
+    <string name="tittle_app">telMo App</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_1">LISTA DE MOTELES</string>
+    <string name="btn_2">MAS CERCANOS</string>
+    <string name="btn_3">RECOMENDADOS</string>
+    <string name="btn_4">SEX-SHOP</string>
+    <string name="btn_5">RECOMENDACIONES</string>
+    <string name="subtittle">TIENES UNA NEGOCIO RELACIONADO</string>
+    <string name="web_page" ><a href="twitter.com">VISITA NUESTRA PAGINA</a></string>
+</resources>

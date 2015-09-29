@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_primary">#48C2F9</color>
+    <color name="theme_dark">#18B5F9</color>
+    <color name="theme_accent">#18B5F9</color>
+    <color name="theme_components">#18B5F9</color>
+    <color name="theme_botton">#26dd6e</color>
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/theme_primary</item>
+        <item name="android:colorPrimaryDark">@color/theme_dark</item>
+        <item name="android:navigationBarColor">@color/theme_primary</item>
+        <item name="android:colorAccent">@color/theme_accent</item>
+        <item name="android:colorControlActivated">@color/theme_components</item>
+        <item name="android:colorControlNormal">@color/theme_accent</item>
+    </style>
+</resources>
