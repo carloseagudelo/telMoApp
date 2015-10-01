@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="theme_primary">#48C2F9</color>
-    <color name="theme_dark">#18B5F9</color>
-    <color name="theme_accent">#18B5F9</color>
-    <color name="theme_components">#18B5F9</color>
-    <color name="theme_botton">#26dd6e</color>
+    <color name="theme_primary">#212121</color>
+    <color name="theme_dark">#9E9E9E</color>
+    <color name="theme_accent">#3326dd</color>
+    <color name="theme_components">#FFD600</color>
+    <color name="theme_botton">#D50000</color>
+    <color name="theme_white">#FFFFFF</color>
+
     <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
         <item name="android:colorPrimary">@color/theme_primary</item>
         <item name="android:colorPrimaryDark">@color/theme_dark</item>
@@ -13,4 +15,8 @@
         <item name="android:colorControlActivated">@color/theme_components</item>
         <item name="android:colorControlNormal">@color/theme_accent</item>
     </style>
+
+
+
+
 </resources>
