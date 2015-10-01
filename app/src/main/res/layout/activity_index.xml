@@ -33,6 +33,7 @@
         android:layout_weight="1">
 
         <Button
+            android:id="@+id/btn_lista"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/btn_1"
@@ -48,6 +49,7 @@
         android:layout_weight="1">
 
         <Button
+            android:id="@+id/btn_cercanos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/btn_2"
@@ -63,6 +65,7 @@
         android:layout_weight="1">
 
         <Button
+            android:id="@+id/btn_recomendados"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/btn_3"
@@ -79,6 +82,7 @@
         android:layout_weight="1">
 
         <Button
+            android:id="@+id/btn_sshop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/btn_4"
@@ -94,6 +98,7 @@
         android:layout_weight="1">
 
         <Button
+            android:id="@+id/btn_recomendaciones"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/btn_5"
