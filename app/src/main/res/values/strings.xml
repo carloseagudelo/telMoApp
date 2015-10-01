@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">TelmoApp</string>
-
     <string name="tittle_app">telMo App</string>
     <string name="action_settings">Settings</string>
     <string name="btn_1">LISTA DE MOTELES</string>
@@ -10,4 +9,17 @@
     <string name="btn_5">RECOMENDACIONES</string>
     <string name="subtittle">TIENES UNA NEGOCIO RELACIONADO</string>
     <string name="web_page" ><a href="twitter.com">VISITA NUESTRA PAGINA</a></string>
+    <string name="title_activity_calification">calification</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="tittle_calification">Nombre Motel</string>
+    <string name="subtittle_calification">de 1 a 5 califique el servicio del motel</string>
+    <string name="ask_1">Pregunta 1</string>
+    <string name="ask_2">Pregunta 2</string>
+    <string name="ask_3">Pregunta 3</string>
+    <string name="ask_4">Pregunta 4</string>
+    <string name="ask_5">Pregunta 5</string>
+    <string name="ask_6">Pregunta 6</string>
+
+
 </resources>
