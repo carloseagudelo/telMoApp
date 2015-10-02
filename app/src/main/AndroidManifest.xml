@@ -36,6 +36,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".motelsNearby"
+            android:label="@string/title_activity_motels_nearby" >
+            <intent-filter>
+                <action android:name="telmoapp.motelsNearby" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".recomendations"
             android:label="@string/title_activity_recomendations" >
             <intent-filter>
@@ -66,7 +75,7 @@
             android:name=".motelProfile"
             android:label="@string/title_activity_motel_profile" >
             <intent-filter>
-                <action android:name="telmoapp.motelsNearby" />
+                <action android:name="telmoapp.motelProfile" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

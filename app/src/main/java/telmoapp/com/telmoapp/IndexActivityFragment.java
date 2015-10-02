@@ -51,11 +51,9 @@ public class IndexActivityFragment extends Fragment {
         btnrecomendados.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent("telmoapp.recomendations"));
+                startActivity(new Intent("telmoapp.bestCalification"));
             }
         });
-
-
         btncercanos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
