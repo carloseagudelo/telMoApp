@@ -1,4 +1,6 @@
 <resources>
+
+        <!-- Strings for activity Index -->
     <string name="app_name">TelmoApp</string>
     <string name="tittle_app">telMo App</string>
     <string name="action_settings">Settings</string>
@@ -10,8 +12,8 @@
     <string name="subtittle">TIENES UNA NEGOCIO RELACIONADO</string>
     <string name="web_page" ><a href="twitter.com">VISITA NUESTRA PAGINA</a></string>
     <string name="title_activity_calification">calification</string>
-    <string name="hello_world">Hello world!</string>
 
+        <!-- Strings for activity calification -->
     <string name="tittle_calification">Nombre Motel</string>
     <string name="subtittle_calification">de 1 a 5 califique el servicio del motel</string>
     <string name="ask_1">Pregunta 1</string>
@@ -21,9 +23,38 @@
     <string name="ask_5">Pregunta 5</string>
     <string name="ask_6">Pregunta 6</string>
     <string name="title_activity_listar_moteles">ListarMotelesActivity</string>
-
+        <!-- Strings for activity MotelList -->
     <string name="seek">Puedes buscar por nombre o ciudad!</string>
-    <string name="ver">Ver Mas</string>
+    <string name="motel_1">MOTEL 1</string>
+    <string name="motel_2">MOTEL 2</string>
+    <string name="motel_3">MOTEL 3</string>
+    <string name="motel_4">MOTEL 4</string>
+    <string name="ver"><a href="twitter.com">VER MAS</a></string>
+    <string name="title_activity_recomendations">recomendations</string>
+    <string name="motel_description">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor</string>
+
+        <!-- Strings for activity MotelList -->
+    <string name="subtittle_recomendation">Recomendaciones</string>
+    <string name="btn_kms">KAMASUTRA</string>
+    <string name="btn_lenceria">LENCERIA</string>
+    <string name="btn_mens">MEN´S CLUB</string>
+    <string name="btn_womens">WOMEN´S CLUB</string>
+    <string name="btn_information">INFORMACION</string>
+    <string name="web_pageHelp" ><a href="twitter.com">AYUDANOS A MEJORAR LA PAGINA</a></string>
+    <string name="title_activity_best_calification">bestCalification</string>
+        <!-- Strings for activity bestCalification -->
+    <string name="subtittle_bestCalification">MEJORES CALIFICADOS</string>
+        <!-- Strings for activity sexShop -->
+    <string name="subtittle_sexShop">SEX-SHOP</string>
+    <string name="title_activity_motels_nearby">motelsNearby</string>
+    <string name="sexShop_1">SEX-SHOP 1</string>
+    <string name="sexShop_2">SEX-SHOP 2</string>
+    <string name="sexShop_3">SEX-SHOP 3</string>
+    <string name="sexShop_4">SEX-SHOP 4</string>
+
+
+
+
 
 
 </resources>

@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
         <TextView
             android:id="@+id/textViewTittle"
@@ -22,7 +23,8 @@
             android:text="@string/tittle_calification"
             android:textAppearance="@style/AppTheme"
             android:textSize='50sp'
-            android:textColor="@color/theme_primary"/>
+            android:textColor="@color/theme_primary"
+            android:paddingTop="30px"/>
 
         <TextView
             android:id="@+id/textViewSubtittle"
@@ -31,7 +33,8 @@
             android:text="@string/subtittle_calification"
             android:textAppearance="@style/AppTheme"
             android:textSize='20sp'
-            android:textColor="@color/theme_primary"/>
+            android:textColor="@color/theme_primary"
+            android:paddingTop="30px"/>
 
     </LinearLayout>
 
@@ -56,12 +59,13 @@
             android:layout_width="203dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/response1.2"
+                android:id="@+id/response1.1"
                 android:layout_weight="1" />
 
             <RadioButton
@@ -111,7 +115,8 @@
             android:layout_width="203dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -166,7 +171,8 @@
             android:layout_width="203dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -221,7 +227,8 @@
             android:layout_width="203dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -269,14 +276,15 @@
             android:textAppearance="@style/AppTheme"
             android:textSize='40sp'
             android:textColor="@color/theme_primary"
-            android:layout_weight="2"/>
+            android:layout_weight="2" />
 
 
         <LinearLayout
             android:layout_width="203dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
 
             <RadioButton
                 android:layout_width="wrap_content"

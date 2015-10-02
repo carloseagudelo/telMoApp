@@ -7,13 +7,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="telmoapp.com.telmoapp.IndexActivity">
+    tools:context="telmoapp.com.telmoapp.recomendations">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
+        android:orientation="vertical"
         android:layout_gravity="center">
 
         <TextView
@@ -25,7 +26,18 @@
             android:textSize='60sp'
             android:layout_marginLeft="25sp"
             android:textColor="@color/theme_primary"
-            android:paddingTop="30px"/>
+            android:paddingTop="20px"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtittle_recomendation"
+            android:textAppearance="@style/AppTheme"
+            android:textSize='20sp'
+            android:layout_marginLeft="25sp"
+            android:textColor="@color/theme_primary"
+            android:paddingTop="20px"/>
 
     </LinearLayout>
 
@@ -38,7 +50,7 @@
             android:id="@+id/btn_lista"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/btn_1"
+            android:text="@string/btn_kms"
             android:layout_marginTop="5dp"
             android:textColor="@color/theme_components"
             android:background="@drawable/button"/>
@@ -54,7 +66,7 @@
             android:id="@+id/btn_cercanos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/btn_2"
+            android:text="@string/btn_lenceria"
             android:layout_marginTop="5dp"
             android:textColor="@color/theme_components"
             android:background="@drawable/button"/>
@@ -70,7 +82,7 @@
             android:id="@+id/btn_recomendados"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/btn_3"
+            android:text="@string/btn_mens"
             android:layout_marginTop="5dp"
             android:textColor="@color/theme_components"
             android:background="@drawable/button"
@@ -87,7 +99,7 @@
             android:id="@+id/btn_sshop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/btn_4"
+            android:text="@string/btn_womens"
             android:layout_marginTop="5dp"
             android:textColor="@color/theme_components"
             android:background="@drawable/button"/>
@@ -103,7 +115,7 @@
             android:id="@+id/btn_recomendaciones"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/btn_5"
+            android:text="@string/btn_information"
             android:layout_marginTop="5dp"
             android:textColor="@color/theme_components"
             android:background="@drawable/button"
@@ -121,18 +133,6 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/subtittle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:text="@string/subtittle"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="60dp"
-                android:layout_marginRight="10dp" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:text="@string/web_page"
+                android:text="@string/web_pageHelp"
                 android:layout_gravity="center_vertical"
                 android:autoLink="all"
                 android:clickable="true"

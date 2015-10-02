@@ -7,25 +7,40 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="telmoapp.com.telmoapp.ListarMotelesActivityFragment">
+    tools:context="telmoapp.com.telmoapp.sexShop">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight=".001"
+        android:layout_weight="0.14"
         android:orientation="vertical"
         android:paddingBottom="10dp">
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="match_parent"
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight=".001"
-            android:text="@string/seek"
-            android:textAlignment="textStart" />
+            android:text="@string/tittle_app"
+            android:textAppearance="@style/AppTheme"
+            android:textSize='60sp'
+            android:layout_marginLeft="25sp"
+            android:textColor="@color/theme_primary"
+            android:paddingTop="20px"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtittle_sexShop"
+            android:textAppearance="@style/AppTheme"
+            android:textSize='20sp'
+            android:layout_marginLeft="25sp"
+            android:textColor="@color/theme_primary"
+            android:paddingTop="20px"/>
+
 
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +57,7 @@
                 android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/motel_1" />
+                android:text="@string/sexShop_1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -59,32 +74,6 @@
                 android:text="@string/motel_description" />
         </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.1">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/una_estrella" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/una_estrella" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/una_estrella" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/una_estrella" />
-        </LinearLayout>
-
     </LinearLayout>
 
     <LinearLayout
@@ -102,7 +91,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/motel_2"/>
+                android:text="@string/sexShop_2"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -118,22 +107,6 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/motel_description" />
         </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.1">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/una_estrella" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/una_estrella" />
-        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -151,7 +124,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/motel_3" />
+                android:text="@string/sexShop_3" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -167,32 +140,6 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/motel_description" />
         </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.1">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/una_estrella" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/una_estrella" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/una_estrella" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/una_estrella" />
-        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -209,7 +156,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/motel_4" />
+                android:text="@string/sexShop_4" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -225,27 +172,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/motel_description" />
         </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.1">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/una_estrella" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/una_estrella" />
-        </LinearLayout>
     </LinearLayout>
 
 
 </LinearLayout>
-
-
-
-
