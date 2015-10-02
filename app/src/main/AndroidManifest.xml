@@ -62,7 +62,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".motelProfile"
             android:label="@string/title_activity_motel_profile" >
@@ -71,6 +70,10 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".sexShopProfile"
+            android:label="@string/title_activity_sex_shop_profile" >
         </activity>
     </application>
 
