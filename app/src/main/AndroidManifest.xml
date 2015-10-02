@@ -19,11 +19,13 @@
         <activity
             android:name=".calification"
             android:label="@string/title_activity_calification" />
+
         <intent-filter>
             <action android:name="telmoapp.calification" />
 
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
+
         <activity
             android:name=".ListarMotelesActivity"
             android:label="@string/title_activity_listar_moteles" >
@@ -60,9 +62,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".motelsNearby"
-            android:label="@string/title_activity_motels_nearby" >
+            android:name=".motelProfile"
+            android:label="@string/title_activity_motel_profile" >
             <intent-filter>
                 <action android:name="telmoapp.motelsNearby" />
 

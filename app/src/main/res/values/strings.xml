@@ -53,6 +53,12 @@
         <!-- Strings for activity motelsNearby -->
     <string name="subtittle_motelNEarby">Estos son los moteles mas cercanos a tu posicion</string>
     <string name="back_list">VOLVER A LA LISTA</string>
+    <string name="title_activity_prueba">prueba</string>
+        <!-- Strings for activity motelProfile -->
+    <string name="title_activity_motels_nearby">Hello world!</string>
+    <string name="title_activity_motel_profile">motelProfile</string>
+    <string name="web_pageMotel"><a href="twitter.com">VISITA NUESTRA PAGINA WEB</a></string>
+    <string name="calification_motel"><a href="twitter.com">VISITA NUESTRA PAGINA WEB</a></string>
 
 
 
