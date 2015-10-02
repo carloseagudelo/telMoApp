@@ -1,66 +1,29 @@
 package telmoapp.com.telmoapp;
 
 import android.app.Activity;
-import android.content.Intent;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-public class IndexActivity extends Activity implements View.OnClickListener {
-    Button btnlista;
-    Button btncercanos;
-    Button btnsexshop;
-    Button btnrecomendados;
-    Button btnrecomendaciones;
+public class IndexActivity extends Activity  {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index);
-        btnlista = (Button) findViewById(R.id.btn_lista);
-        btncercanos = (Button) findViewById(R.id.btn_cercanos);
-        btnrecomendaciones = (Button) findViewById(R.id.btn_recomendaciones);
-        btnrecomendados = (Button) findViewById(R.id.btn_recomendados);
-        btnsexshop = (Button) findViewById(R.id.btn_sshop);
-
-        btnlista.setOnClickListener(this);
-        btnsexshop.setOnClickListener(this);
-        btnrecomendados.setOnClickListener(this);
-        btncercanos.setOnClickListener(this);
-        btnrecomendaciones.setOnClickListener(this);
-
-
-
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-
-            case R.id.btn_lista:
-
-                startActivity(new Intent("telmoapp.ListarMotelesActivity"));
-
-                break;
-            case R.id.btn_recomendaciones:
-                startActivity(new Intent("telmoapp.recomendations"));
-                break;
-            case R.id.btn_cercanos:
-                startActivity(new Intent("telmoapp.motelsNearby"));
-                break;
-            case R.id.btn_recomendados:
-                startActivity(new Intent("telmoapp.recomendations"));
-                break;
-            case R.id.btn_sshop:
-                startActivity(new Intent("telmoapp.sexShop"));
-                break;
-            default:
-                break;
+        if (savedInstanceState == null) {
+            // Create a fragment
+            IndexActivityFragment fragment = new IndexActivityFragment();
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.add(android.R.id.content, fragment, fragment.getClass().getSimpleName());
+            fragmentTransaction.commit();
         }
-
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

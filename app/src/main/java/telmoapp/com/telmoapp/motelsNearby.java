@@ -1,6 +1,8 @@
 package telmoapp.com.telmoapp;
 
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,6 +13,14 @@ public class motelsNearby extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_motels_nearby);
+        if (savedInstanceState == null) {
+            // Create a fragment
+            motelsNearbyFragment fragment = new motelsNearbyFragment();
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.add(android.R.id.content, fragment, fragment.getClass().getSimpleName());
+            fragmentTransaction.commit();
+        }
     }
 
     @Override

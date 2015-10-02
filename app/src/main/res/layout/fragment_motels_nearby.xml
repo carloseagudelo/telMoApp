@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="telmoapp.com.telmoapp.motelsNearbyFragment">
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tittle_app"
+            android:textAppearance="@style/AppTheme"
+            android:textSize='60sp'
+            android:layout_marginLeft="25sp"
+            android:textColor="@color/theme_primary"
+            android:paddingTop="20px"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtittle_motelNEarby"
+            android:textAppearance="@style/AppTheme"
+            android:textSize='10sp'
+            android:layout_marginLeft="25sp"
+            android:textColor="@color/theme_primary"
+            android:paddingTop="20px"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="100dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_list"
+            android:textAppearance="@style/AppTheme"
+            android:textSize='10sp'
+            android:layout_marginLeft="25sp"
+            android:textColor="@color/theme_primary"
+            android:paddingTop="20px"/>
+    </LinearLayout>
+
+</FrameLayout>

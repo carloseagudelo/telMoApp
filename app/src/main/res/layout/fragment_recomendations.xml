@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="telmoapp.com.telmoapp.recomendationsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tittle_app"
+            android:textAppearance="@style/AppTheme"
+            android:textSize='60sp'
+            android:layout_marginLeft="25sp"
+            android:textColor="@color/theme_primary"
+            android:paddingTop="20px"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtittle_recomendation"
+            android:textAppearance="@style/AppTheme"
+            android:textSize='20sp'
+            android:layout_marginLeft="25sp"
+            android:textColor="@color/theme_primary"
+            android:paddingTop="20px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btn_kms"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/theme_components"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_cercanos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btn_lenceria"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/theme_components"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_recomendados"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btn_mens"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/theme_components"
+            android:background="@drawable/button"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_sshop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btn_womens"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/theme_components"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_recomendaciones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btn_information"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/theme_components"
+            android:background="@drawable/button"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/webpage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/web_pageHelp"
+                android:layout_gravity="center_vertical"
+                android:autoLink="all"
+                android:clickable="true"
+                android:layout_marginLeft="100dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
