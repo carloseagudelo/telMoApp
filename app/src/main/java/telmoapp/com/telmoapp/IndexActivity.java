@@ -45,12 +45,16 @@ public class IndexActivity extends Activity implements View.OnClickListener {
 
                 break;
             case R.id.btn_recomendaciones:
+                startActivity(new Intent("telmoapp.recomendations"));
                 break;
             case R.id.btn_cercanos:
+                startActivity(new Intent("telmoapp.motelsNearby"));
                 break;
             case R.id.btn_recomendados:
+                startActivity(new Intent("telmoapp.recomendations"));
                 break;
             case R.id.btn_sshop:
+                startActivity(new Intent("telmoapp.sexShop"));
                 break;
             default:
                 break;

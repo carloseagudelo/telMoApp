@@ -46,11 +46,14 @@
     <string name="subtittle_bestCalification">MEJORES CALIFICADOS</string>
         <!-- Strings for activity sexShop -->
     <string name="subtittle_sexShop">SEX-SHOP</string>
-    <string name="title_activity_motels_nearby">motelsNearby</string>
     <string name="sexShop_1">SEX-SHOP 1</string>
     <string name="sexShop_2">SEX-SHOP 2</string>
     <string name="sexShop_3">SEX-SHOP 3</string>
     <string name="sexShop_4">SEX-SHOP 4</string>
+
+    <!-- Strings for activity MotelList -->
+
+    <string name="title_activity_motels_nearby">motelsNearby</string>
 
 
 
