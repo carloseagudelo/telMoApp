@@ -20,6 +20,10 @@
     <string name="ask_4">Pregunta 4</string>
     <string name="ask_5">Pregunta 5</string>
     <string name="ask_6">Pregunta 6</string>
+    <string name="title_activity_listar_moteles">ListarMotelesActivity</string>
+
+    <string name="seek">Puedes buscar por nombre o ciudad!</string>
+    <string name="ver">Ver Mas</string>
 
 
 </resources>
