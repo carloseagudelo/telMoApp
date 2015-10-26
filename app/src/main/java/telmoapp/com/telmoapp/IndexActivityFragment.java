@@ -57,7 +57,7 @@ public class IndexActivityFragment extends Fragment {
         btncercanos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent("telmoapp.motelsNearby"));
+                startActivity(new Intent("telmoapp.MapsActivity"));
             }
         });
         btnrecomendaciones.setOnClickListener(new View.OnClickListener() {
