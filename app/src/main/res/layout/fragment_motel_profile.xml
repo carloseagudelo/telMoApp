@@ -187,14 +187,15 @@
                 android:textColor="@color/theme_primary"/>
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/link_calification2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/calification_motel"
                 android:textAppearance="@style/AppTheme"
                 android:textSize='10sp'
                 android:layout_marginLeft="25sp"
-                android:textColor="@color/theme_primary" />
+                android:textColor="@color/theme_primary"
+                android:onClick="true"/>
         </LinearLayout>
 
 </LinearLayout>

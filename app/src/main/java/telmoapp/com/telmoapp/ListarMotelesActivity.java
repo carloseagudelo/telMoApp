@@ -14,7 +14,6 @@ public class ListarMotelesActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listar_moteles);
 
-
         if (savedInstanceState == null) {
             // Create a fragment
             ListarMotelesActivityFragment fragment = new ListarMotelesActivityFragment();

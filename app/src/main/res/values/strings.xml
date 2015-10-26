@@ -6,7 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="btn_1">LISTA DE MOTELES</string>
     <string name="btn_2">MAS CERCANOS</string>
-    <string name="btn_3">RECOMENDADOS</string>
+    <string name="btn_3">MEJOR CALIFICADOS</string>
     <string name="btn_4">SEX-SHOP</string>
     <string name="btn_5">RECOMENDACIONES</string>
     <string name="subtittle">TIENES UNA NEGOCIO RELACIONADO</string>
@@ -58,7 +58,7 @@
     <string name="title_activity_motels_nearby">Hello world!</string>
     <string name="title_activity_motel_profile">motelProfile</string>
     <string name="web_pageMotel"><a href="twitter.com">VISITA NUESTRA PAGINA WEB</a></string>
-    <string name="calification_motel"><a href="twitter.com">VISITA NUESTRA PAGINA WEB</a></string>
+    <string name="calification_motel"><a href="twitter.com">Califica el motel</a></string>
     <string name="title_activity_sex_shop_profile">sexShopProfile</string>
     <string name="hello_world">Hello world!</string>
         <!-- Strings for activity motelProfile -->
