@@ -20,9 +20,10 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-=======
+
     package="telmoapp.com.telmoapp">
->>>>>>> 702497ca6cf5f8ff93c331929fdc2884b2cb2ab2
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
