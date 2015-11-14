@@ -1,119 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="telmoapp.com.telmoapp" >
-    
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission
-    android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-    android:maxSdkVersion="23" />
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="23" />
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="23" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality. 
     -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
     package="telmoapp.com.telmoapp">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-
     <application
+        android:name=".ListarMotelesController"
         android:allowBackup="true"
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".IndexActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-         </activity>
-
+        </activity>
         <activity
             android:name=".calification"
-            android:label="@string/title_activity_calification">
-
+            android:label="@string/title_activity_calification" >
             <intent-filter>
                 <action android:name="telmoapp.calification" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ListarMotelesActivity"
-            android:label="@string/title_activity_listar_moteles">
+            android:label="@string/title_activity_listar_moteles" >
             <intent-filter>
                 <action android:name="telmoapp.ListarMotelesActivity" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".motelsNearby"
-            android:label="@string/title_activity_motels_nearby">
+            android:label="@string/title_activity_motels_nearby" >
             <intent-filter>
                 <action android:name="telmoapp.motelsNearby" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".recomendations"
-            android:label="@string/title_activity_recomendations">
+            android:label="@string/title_activity_recomendations" >
             <intent-filter>
                 <action android:name="telmoapp.recomendations" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".bestCalification"
-            android:label="@string/title_activity_best_calification">
+            android:label="@string/title_activity_best_calification" >
             <intent-filter>
                 <action android:name="telmoapp.bestCalification" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".sexShop"
-            android:label="@string/subtittle_sexShop">
+            android:label="@string/subtittle_sexShop" >
             <intent-filter>
                 <action android:name="telmoapp.sexShop" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".motelProfile"
-            android:label="@string/title_activity_motel_profile">
+            android:label="@string/title_activity_motel_profile" >
             <intent-filter>
                 <action android:name="telmoapp.motelProfile" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".sexShopProfile"
-            android:label="@string/title_activity_sex_shop_profile">
+            android:label="@string/title_activity_sex_shop_profile" >
         </activity>
 
         <!--
@@ -131,7 +119,6 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" >
@@ -141,9 +128,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
-
+        <activity
+            android:name=".costum_listar_moteles"
+            android:label="@string/title_activity_costum_listar_moteles" >
+        </activity>
     </application>
 
 </manifest>
