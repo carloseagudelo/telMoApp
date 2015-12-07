@@ -98,7 +98,7 @@ public class ListarMotelesActivityFragment extends Fragment {
 
             }
         });
-
+;
         ListarMotelesController.getmInstance().addToRequesQueue(jsonArrayRequest);
 
         return v;

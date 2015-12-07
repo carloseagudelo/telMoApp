@@ -48,8 +48,8 @@ public class motelProfileFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_motel_profile, container, false);
 
-
         imagenView = (ImageView) v.findViewById(R.id.logoProfile);
+        //linkcalification = (TextView) v.findViewById(R.id.textView10);
         Bundle b = getActivity().getIntent().getExtras();
 
         //Completo la URL a donde debera ir a buscar El JSONObject
@@ -96,7 +96,6 @@ public class motelProfileFragment extends Fragment {
 
             }
         });
-
 
         ListarMotelesController.getmInstance().addToRequesQueue(jsonArrayRequest);
         return v;

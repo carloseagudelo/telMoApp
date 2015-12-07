@@ -52,11 +52,14 @@ public class profileAdapter extends BaseAdapter {
         if(imageLoader==null)
             imageLoader=ListarMotelesController.getmInstance().getmImageLoader();
             NetworkImageView imageView= (NetworkImageView) convertView.findViewById(R.id.logoProfile);
+            TextView name= (TextView) convertView.findViewById(R.id.name);
 
             //getting data for row
             Motel item=items.get(position);
             //image
             imageView.setImageUrl(item.getImage(), imageLoader);
+            //name
+            name.setText(item.getName());
 
         return convertView;
     }
