@@ -5,6 +5,15 @@ package telmoapp.com.telmoapp;
  */
 public class Motel {
     public String name, description, type, addres, image;
+    public int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

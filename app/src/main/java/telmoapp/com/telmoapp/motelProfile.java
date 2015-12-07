@@ -21,6 +21,7 @@ public class motelProfile extends Activity {
             fragmentTransaction.add(android.R.id.content, fragment,  fragment.getClass().getSimpleName());
             fragmentTransaction.commit();
         }
+
     }
 
 

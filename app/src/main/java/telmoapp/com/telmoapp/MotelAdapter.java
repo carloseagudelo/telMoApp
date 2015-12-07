@@ -54,6 +54,8 @@ public class MotelAdapter extends BaseAdapter {
             TextView addres= (TextView) convertView.findViewById(R.id.motel_addres);
             //getting data for row
             Motel item=items.get(position);
+        //id
+            name.setText(item.getName());
         //name
             name.setText(item.getName());
         //description

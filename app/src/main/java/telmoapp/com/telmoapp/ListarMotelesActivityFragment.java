@@ -1,13 +1,16 @@
 package telmoapp.com.telmoapp;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.ProgressDialog;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -41,7 +44,7 @@ public class ListarMotelesActivityFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_listar_moteles, container, false);
+        final View v = inflater.inflate(R.layout.fragment_listar_moteles, container, false);
 
         listView = (ListView) v.findViewById(R.id.list_item);
         adapter=new MotelAdapter(getActivity(),array);
@@ -52,7 +55,7 @@ public class ListarMotelesActivityFragment extends Fragment {
         dialog.show();
 
         //Create volley request obj
-        JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(URL, new Response.Listener<JSONArray>() {
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(URL, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
                 hideDialog();
@@ -61,6 +64,7 @@ public class ListarMotelesActivityFragment extends Fragment {
                     try{
                         JSONObject obj=response.getJSONObject(i);
                         Motel item = new Motel();
+                        item.setId(obj.getInt("id"));
                         item.setName(obj.getString("name"));
                         item.setImage(obj.getString("logo"));
                         item.setDescription(obj.getString("description"));
@@ -73,6 +77,20 @@ public class ListarMotelesActivityFragment extends Fragment {
                     }
                 }
                 adapter.notifyDataSetChanged();
+            //Crea el evento para ir al perfil del motel
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Object o = listView.getItemAtPosition(position);
+                    Intent intent = new Intent("telmoapp.motelProfile");
+                    Bundle b = new Bundle();
+                    b.putInt("IdMotel", ((Motel) o).id);
+                    intent.putExtras(b);
+                    startActivity(intent);
+                    }
+                });
+
+
             }
         }, new Response.ErrorListener() {
             @Override
@@ -80,6 +98,7 @@ public class ListarMotelesActivityFragment extends Fragment {
 
             }
         });
+
         ListarMotelesController.getmInstance().addToRequesQueue(jsonArrayRequest);
 
         return v;
