@@ -47,16 +47,14 @@ public class profileAdapter extends BaseAdapter {
             inflater=(LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
         if(convertView ==null){
-            convertView=inflater.inflate(R.layout.fragment_costum_listar,null);
+            convertView=inflater.inflate(R.layout.fragment_custom_profile,null);
         }
         if(imageLoader==null)
             imageLoader=ListarMotelesController.getmInstance().getmImageLoader();
             NetworkImageView imageView= (NetworkImageView) convertView.findViewById(R.id.logoProfile);
-            TextView name= (TextView) convertView.findViewById(R.id.texto1);
+
             //getting data for row
             Motel item=items.get(position);
-            //texto
-            name.setText(item.getName());
             //image
             imageView.setImageUrl(item.getImage(), imageLoader);
 

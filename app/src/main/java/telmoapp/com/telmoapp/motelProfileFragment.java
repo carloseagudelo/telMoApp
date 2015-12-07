@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.FrameLayout;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -33,11 +35,12 @@ public class motelProfileFragment extends Fragment {
 
     TextView linkcalification;
     ImageView imagenView;
+    GridView ListV;
     //falta instanciar los demas objetos
     private ProgressDialog dialog;
     private static final String URL = "https://infinite-atoll-7499.herokuapp.com/api/v1/motel/";
     private profileAdapter adapter;
-    private List<Motel> array = new ArrayList<Motel>();;
+    private List<Motel> array = new ArrayList<Motel>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -45,8 +48,8 @@ public class motelProfileFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_motel_profile, container, false);
 
-        linkcalification = (TextView) v.findViewById(R.id.link_calification2);
-        imagenView = (ImageView) v.findViewById(R.id.image_view);
+
+        imagenView = (ImageView) v.findViewById(R.id.logoProfile);
         Bundle b = getActivity().getIntent().getExtras();
 
         //Completo la URL a donde debera ir a buscar El JSONObject
@@ -54,7 +57,9 @@ public class motelProfileFragment extends Fragment {
         String par = Integer.toString(x)+".json";
         String URIF = URL+par;
 
+        ListV = (GridView) v.findViewById(R.id.gridView);
         adapter=new profileAdapter(getActivity(),array);
+        ListV.setAdapter(adapter);
 
         //Creo un nuevo ciadro de diaogo para esperar que cargue la data
         dialog=new ProgressDialog(getActivity());
@@ -70,17 +75,19 @@ public class motelProfileFragment extends Fragment {
                 //parsing json
                     try{
                         Motel item = new Motel();
-                        item.setId(response.getInt("id"));
                         item.setName(response.getString("name"));
                         item.setImage(response.getString("logo"));
                         item.setDescription(response.getString("description"));
                         item.setType(response.getString("type_id"));
                         item.setAddres(response.getString("addres"));
+                        item.setUrlPage(response.getString("URL_WebPage"));
+                        item.setUrlVideo(response.getString("URL_Video"));
+                        item.setType(response.getString("type_id"));
+                        item.setCity(response.getString("city_id"));
                         array.add(item);
                     }catch(JSONException ex){
                         ex.printStackTrace();
                     }
-
                 adapter.notifyDataSetChanged();
             }
         }, new Response.ErrorListener() {
@@ -91,12 +98,6 @@ public class motelProfileFragment extends Fragment {
         });
 
 
-        linkcalification.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent("telmoapp.calification"));
-            }
-        });
         ListarMotelesController.getmInstance().addToRequesQueue(jsonArrayRequest);
         return v;
     }

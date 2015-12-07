@@ -4,8 +4,32 @@ package telmoapp.com.telmoapp;
  * Created by agude on 03/11/2015.
  */
 public class Motel {
-    public String name, description, type, addres, image;
+    public String name, description, type, addres, image, urlPage, urlVideo, city;
     public int id;
+
+    public String getUrlPage() {
+        return urlPage;
+    }
+
+    public void setUrlPage(String urlPage) {
+        this.urlPage = urlPage;
+    }
+
+    public String getUrlVideo() {
+        return urlVideo;
+    }
+
+    public void setUrlVideo(String urlVideo) {
+        this.urlVideo = urlVideo;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
 
     public int getId() {
         return id;
