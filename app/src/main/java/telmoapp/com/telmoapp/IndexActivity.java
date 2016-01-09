@@ -1,13 +1,15 @@
 package telmoapp.com.telmoapp;
 
-import android.app.Activity;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+
+import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class IndexActivity extends Activity  {
+
+public class IndexActivity extends AppCompatActivity {
 
 
     @Override
@@ -17,7 +19,7 @@ public class IndexActivity extends Activity  {
         if (savedInstanceState == null) {
             // Create a fragment
             IndexActivityFragment fragment = new IndexActivityFragment();
-            FragmentManager fragmentManager = getFragmentManager();
+            FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.add(android.R.id.content, fragment, fragment.getClass().getSimpleName());
             fragmentTransaction.commit();

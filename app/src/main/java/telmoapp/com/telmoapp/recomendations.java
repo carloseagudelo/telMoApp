@@ -1,13 +1,13 @@
 package telmoapp.com.telmoapp;
 
-import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class recomendations extends Activity {
+public class recomendations extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
