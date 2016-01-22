@@ -29,13 +29,10 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * A placeholder fragment containing a simple view.
- */
-public class ListarMotelesActivityFragment extends Fragment {
 
+public class best_calification_fragment extends Fragment {
 
-    private static final String  URL = "https://infinite-atoll-7499.herokuapp.com/api/v1/motel";
+    private static final String  URL = "https://infinite-atoll-7499.herokuapp.com/api/v1/motelindex";
     private ProgressDialog dialog;
     private List<Motel> array = new ArrayList<Motel>();
     private ListView listView;
@@ -76,9 +73,8 @@ public class ListarMotelesActivityFragment extends Fragment {
                         ex.printStackTrace();
                     }
                 }
-                Log.v("prueba",array.toString());
                 adapter.notifyDataSetChanged();
-            //Crea el evento para ir al perfil del motel
+                //Crea el evento para ir al perfil del motel
                 listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -99,7 +95,7 @@ public class ListarMotelesActivityFragment extends Fragment {
 
             }
         });
-;
+        ;
         ListarMotelesController.getmInstance().addToRequesQueue(jsonArrayRequest);
 
         return v;
@@ -110,7 +106,5 @@ public class ListarMotelesActivityFragment extends Fragment {
             dialog=null;
         }
     }
-
-
 
 }

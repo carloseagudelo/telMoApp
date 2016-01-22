@@ -1,14 +1,15 @@
 package telmoapp.com.telmoapp;
 
 
-
-import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.app.Fragment;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 /**
@@ -36,6 +37,9 @@ public class IndexActivityFragment extends Fragment {
         btnrecomendaciones = (Button) v.findViewById(R.id.btn_recomendaciones);
         btnrecomendados = (Button) v.findViewById(R.id.btn_recomendados);
         btnsexshop = (Button) v.findViewById(R.id.btn_sshop);
+
+        TextView t2 = (TextView) v.findViewById(R.id.webpage);
+        t2.setMovementMethod(LinkMovementMethod.getInstance());
 
         btnlista.setOnClickListener(new View.OnClickListener() {
             @Override

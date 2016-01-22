@@ -24,7 +24,7 @@ public class LocationsDB extends SQLiteOpenHelper{
     public static final String FIELD_LNG = "lng";
 
     /** Field 4 of the table locations, stores the zoom level of map*/
-    public static final String FIELD_ZOOM = "zom";
+    public static final String FIELD_DESC = "zom";
 
     /** A constant, stores the table name */
     private static final String DATABASE_TABLE = "locations";
@@ -47,7 +47,7 @@ public class LocationsDB extends SQLiteOpenHelper{
                 FIELD_ROW_ID + " integer primary key, " +
                 FIELD_LNG + " double , " +
                 FIELD_LAT + " double , " +
-                FIELD_ZOOM + " text " +
+                FIELD_DESC + " text " +
                 " ) ";
 
         db.execSQL(sql);
@@ -67,7 +67,7 @@ public class LocationsDB extends SQLiteOpenHelper{
 
     /** Returns all the locations from the table */
     public Cursor getAllLocations(){
-        return mDB.query(DATABASE_TABLE, new String[] { FIELD_ROW_ID,  FIELD_LAT , FIELD_LNG, FIELD_ZOOM } , null, null, null, null, null);
+        return mDB.query(DATABASE_TABLE, new String[] { FIELD_ROW_ID,  FIELD_LAT , FIELD_LNG, FIELD_DESC } , null, null, null, null, null);
     }
 
 

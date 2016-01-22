@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -33,8 +34,6 @@ import java.util.List;
 
 public class motelProfileFragment extends Fragment {
 
-    TextView linkcalification;
-    ImageView imagenView;
     GridView ListV;
     //falta instanciar los demas objetos
     private ProgressDialog dialog;
@@ -47,13 +46,10 @@ public class motelProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_motel_profile, container, false);
-
-        imagenView = (ImageView) v.findViewById(R.id.logoProfile);
-        //linkcalification = (TextView) v.findViewById(R.id.textView10);
         Bundle b = getActivity().getIntent().getExtras();
 
         //Completo la URL a donde debera ir a buscar El JSONObject
-        int x = b.getInt("IdMotel");
+        final int x = b.getInt("IdMotel");
         String par = Integer.toString(x)+".json";
         String URIF = URL+par;
 
@@ -61,11 +57,10 @@ public class motelProfileFragment extends Fragment {
         adapter=new profileAdapter(getActivity(),array);
         ListV.setAdapter(adapter);
 
-        //Creo un nuevo ciadro de diaogo para esperar que cargue la data
+        //Creo un nuevo cuadro de diaogo para esperar que cargue la data
         dialog=new ProgressDialog(getActivity());
         dialog.setMessage("Loading...");
         dialog.show();
-
 
         //Creo un request object con Volley
         JsonObjectRequest jsonArrayRequest = new JsonObjectRequest(URIF, new Response.Listener<JSONObject>() {
@@ -89,6 +84,7 @@ public class motelProfileFragment extends Fragment {
                         ex.printStackTrace();
                     }
                 adapter.notifyDataSetChanged();
+
             }
         }, new Response.ErrorListener() {
             @Override

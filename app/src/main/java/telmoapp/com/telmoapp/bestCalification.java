@@ -1,5 +1,8 @@
 package telmoapp.com.telmoapp;
 
+import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -11,6 +14,15 @@ public class bestCalification extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_best_calification);
+
+        if (savedInstanceState == null) {
+            // Create a fragment
+            best_calification_fragment fragment = new best_calification_fragment();
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.add(android.R.id.content, fragment, fragment.getClass().getSimpleName());
+            fragmentTransaction.commit();
+        }
     }
 
     @Override

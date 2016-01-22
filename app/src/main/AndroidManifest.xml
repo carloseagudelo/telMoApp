@@ -25,28 +25,25 @@
 
         <activity
             android:name=".IndexActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".calification"
-            android:label="@string/title_activity_calification"
-            android:theme="@style/AppTheme">
+            android:label="@string/title_activity_calification" >
             <intent-filter>
                 <action android:name="telmoapp.calification" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity
             android:name=".ListarMotelesActivity"
-            android:label="@string/title_activity_listar_moteles"
-            android:theme="@style/AppTheme">
+            android:label="@string/title_activity_listar_moteles" >
             <intent-filter>
                 <action android:name="telmoapp.ListarMotelesActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -55,8 +52,7 @@
 
         <activity
             android:name=".motelProfile"
-            android:label="@string/title_activity_motel_profile"
-            android:theme="@style/AppTheme">
+            android:label="@string/title_activity_motel_profile" >
             <intent-filter>
                 <action android:name="telmoapp.motelProfile" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -66,52 +62,43 @@
 
         <activity
             android:name=".motelsNearby"
-            android:label="@string/title_activity_motels_nearby"
-            android:theme="@style/AppTheme">
+            android:label="@string/title_activity_motels_nearby" >
             <intent-filter>
                 <action android:name="telmoapp.motelsNearby" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity
             android:name=".recomendations"
-            android:label="@string/title_activity_recomendations"
-            android:theme="@style/AppTheme">
+            android:label="@string/title_activity_recomendations" >
             <intent-filter>
                 <action android:name="telmoapp.recomendations" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity
             android:name=".bestCalification"
-            android:label="@string/title_activity_best_calification"
-            android:theme="@style/AppTheme">
+            android:label="@string/title_activity_best_calification" >
             <intent-filter>
                 <action android:name="telmoapp.bestCalification" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity
             android:name=".sexShop"
-            android:label="@string/subtittle_sexShop"
-            android:theme="@style/AppTheme">
+            android:label="@string/subtittle_sexShop" >
             <intent-filter>
                 <action android:name="telmoapp.sexShop" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity
             android:name=".sexShopProfile"
-            android:label="@string/title_activity_sex_shop_profile"
-            android:theme="@style/AppTheme">
+            android:label="@string/title_activity_sex_shop_profile" >
         </activity>
 
         <meta-data
@@ -123,8 +110,7 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"
-            android:theme="@style/AppTheme">
+            android:label="@string/title_activity_maps" >
             <intent-filter>
                 <action android:name="telmoapp.MapsActivity" />
 
@@ -133,8 +119,7 @@
         </activity>
         <activity
             android:name=".costum_listar_moteles"
-            android:label="@string/title_activity_costum_listar_moteles"
-            android:theme="@style/AppTheme">
+            android:label="@string/title_activity_costum_listar_moteles" >
         </activity>
     </application>
 

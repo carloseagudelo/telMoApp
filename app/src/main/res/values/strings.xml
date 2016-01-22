@@ -1,6 +1,6 @@
 <resources>
 
-        <!-- Strings for activity Index -->
+    <!-- Strings for activity Index -->
     <string name="app_name">TelmoApp</string>
     <string name="tittle_app">telMo App</string>
     <string name="action_settings">Settings</string>
@@ -10,10 +10,17 @@
     <string name="btn_4">SEX-SHOP</string>
     <string name="btn_5">RECOMENDACIONES</string>
     <string name="subtittle">TIENES UNA NEGOCIO RELACIONADO</string>
-    <string name="web_page" ><a href="twitter.com">VISITA NUESTRA PAGINA</a></string>
+    <string name="web_page"><a href="https://infinite-atoll-7499.herokuapp.com/">VISITA NUESTRA PAGINA</a></string>
     <string name="title_activity_calification">calification</string>
+    <!-- Actuales -->
+    <string name="direccion">Direccion</string>
+    <string name="webpage">Pagina Web</string>
+    <string name="video">Video</string>
+    <string name="llamar">Llama al motel</string>
+    <string name="calificar">Califica el motel</string>
 
-        <!-- Strings for activity calification -->
+
+    <!-- Strings for activity calification -->
     <string name="tittle_calification">Nombre Motel</string>
     <string name="subtittle_calification">de 1 a 5 califique el servicio del motel</string>
     <string name="ask_1">Pregunta 1</string>
@@ -23,7 +30,7 @@
     <string name="ask_5">Pregunta 5</string>
     <string name="ask_6">Pregunta 6</string>
     <string name="title_activity_listar_moteles">ListarMotelesActivity</string>
-        <!-- Strings for activity MotelList -->
+    <!-- Strings for activity MotelList -->
     <string name="seek">Puedes buscar por nombre o ciudad!</string>
     <string name="motel_1">MOTEL 1</string>
     <string name="motel_2">MOTEL 2</string>
@@ -33,50 +40,44 @@
     <string name="title_activity_recomendations">recomendations</string>
     <string name="motel_description">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor</string>
 
-        <!-- Strings for activity MotelList -->
+    <!-- Strings for activity MotelList -->
     <string name="subtittle_recomendation">Recomendaciones</string>
     <string name="btn_kms">KAMASUTRA</string>
     <string name="btn_lenceria">LENCERIA</string>
     <string name="btn_mens">MEN´S CLUB</string>
     <string name="btn_womens">WOMEN´S CLUB</string>
     <string name="btn_information">INFORMACION</string>
-    <string name="web_pageHelp" ><a href="twitter.com">AYUDANOS A MEJORAR LA PAGINA</a></string>
+    <string name="web_pageHelp"><a href="twitter.com">AYUDANOS A MEJORAR LA PAGINA</a></string>
     <string name="title_activity_best_calification">bestCalification</string>
-        <!-- Strings for activity bestCalification -->
+    <!-- Strings for activity bestCalification -->
     <string name="subtittle_bestCalification">MEJORES CALIFICADOS</string>
-        <!-- Strings for activity sexShop -->
+    <!-- Strings for activity sexShop -->
     <string name="subtittle_sexShop">SEX-SHOP</string>
     <string name="sexShop_1">SEX-SHOP 1</string>
     <string name="sexShop_2">SEX-SHOP 2</string>
     <string name="sexShop_3">SEX-SHOP 3</string>
     <string name="sexShop_4">SEX-SHOP 4</string>
-        <!-- Strings for activity motelsNearby -->
+    <!-- Strings for activity motelsNearby -->
     <string name="subtittle_motelNEarby">Estos son los moteles mas cercanos a tu posicion</string>
     <string name="back_list">VOLVER A LA LISTA</string>
     <string name="title_activity_prueba">prueba</string>
-        <!-- Strings for activity motelProfile -->
+    <!-- Strings for activity motelProfile -->
     <string name="title_activity_motels_nearby">Hello world!</string>
     <string name="title_activity_motel_profile">motelProfile</string>
     <string name="web_pageMotel"><a href="twitter.com">VISITA NUESTRA PAGINA WEB</a></string>
     <string name="calification_motel"><a href="twitter.com">Califica el motel</a></string>
     <string name="title_activity_sex_shop_profile">sexShopProfile</string>
     <string name="hello_world">Hello world!</string>
-        <!-- Strings for activity motelProfile -->
+    <!-- Strings for activity motelProfile -->
     <string name="sexShop_description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_costum_listar_moteles">costum_listar_moteles</string>
 
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
     <string name="test">Test text string</string>
-
-
-
-
-
-
 
 
 </resources>
