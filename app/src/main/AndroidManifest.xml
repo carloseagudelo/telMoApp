@@ -121,6 +121,12 @@
             android:name=".costum_listar_moteles"
             android:label="@string/title_activity_costum_listar_moteles" >
         </activity>
+
+        <service
+            android:name=".RefreshService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
     </application>
 
 </manifest>

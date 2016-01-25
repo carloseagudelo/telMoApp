@@ -11,23 +11,21 @@ public class LocationsDB extends SQLiteOpenHelper{
     /** Database name */
     private static String DBNAME = "locationmarkersqlite";
 
-    /** Version number of the database */
     private static int VERSION = 1;
 
-    /** Field 1 of the table locations, which is the primary key */
     public static final String FIELD_ROW_ID = "_id";
-
-    /** Field 2 of the table locations, stores the latitude */
     public static final String FIELD_LAT = "lat";
-
-    /** Field 3 of the table locations, stores the longitude*/
     public static final String FIELD_LNG = "lng";
+    public static final String FIELD_NAME = "name";
+    public static final String FIELD_LOGO= "logo";
+    public static final String FIELD_DESCRIPTION = "description";
+    public static final String FIELD_TYPE_ID = "type_id";
+    public static final String FIELD_ADDRES = "addres";
 
-    /** Field 4 of the table locations, stores the zoom level of map*/
-    public static final String FIELD_DESC = "zom";
+
 
     /** A constant, stores the table name */
-    private static final String DATABASE_TABLE = "locations";
+    private static final String DATABASE_TABLE = "Motels";
 
     /** An instance variable for SQLiteDatabase */
     private SQLiteDatabase mDB;
@@ -47,14 +45,19 @@ public class LocationsDB extends SQLiteOpenHelper{
                 FIELD_ROW_ID + " integer primary key, " +
                 FIELD_LNG + " double , " +
                 FIELD_LAT + " double , " +
-                FIELD_DESC + " text " +
-                " ) ";
+                FIELD_DESCRIPTION + " text , " +
+                FIELD_NAME + " text , " +
+                FIELD_LOGO + " text , " +
+                FIELD_TYPE_ID + " text , " +
+                FIELD_ADDRES + " text " +
 
+                " ) ";
         db.execSQL(sql);
     }
 
     /** Inserts a new location to the table locations */
     public long insert(ContentValues contentValues){
+
         long rowID = mDB.insert(DATABASE_TABLE, null, contentValues);
         return rowID;
     }
@@ -67,10 +70,8 @@ public class LocationsDB extends SQLiteOpenHelper{
 
     /** Returns all the locations from the table */
     public Cursor getAllLocations(){
-        return mDB.query(DATABASE_TABLE, new String[] { FIELD_ROW_ID,  FIELD_LAT , FIELD_LNG, FIELD_DESC } , null, null, null, null, null);
+        return mDB.query(DATABASE_TABLE, new String[] { FIELD_ROW_ID,  FIELD_LAT , FIELD_LNG, FIELD_DESCRIPTION, FIELD_NAME, FIELD_LOGO, FIELD_TYPE_ID, FIELD_ADDRES } , null, null, null, null, null);
     }
-
-
 
 
     @Override

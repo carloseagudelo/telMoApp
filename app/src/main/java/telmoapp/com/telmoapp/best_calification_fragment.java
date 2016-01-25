@@ -5,6 +5,7 @@ import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -41,39 +43,30 @@ public class best_calification_fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         final View v = inflater.inflate(R.layout.fragment_listar_moteles, container, false);
 
         listView = (ListView) v.findViewById(R.id.list_item);
         adapter=new MotelAdapter(getActivity(),array);
         listView.setAdapter(adapter);
 
-        dialog=new ProgressDialog(getActivity());
-        dialog.setMessage("Loading...");
-        dialog.show();
-
-        //Create volley request obj
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(URL, new Response.Listener<JSONArray>() {
-            @Override
-            public void onResponse(JSONArray response) {
-                hideDialog();
-                //parsing json
-                for(int i=0;i<response.length();i++){
-                    try{
-                        JSONObject obj=response.getJSONObject(i);
-                        Motel item = new Motel();
-                        item.setId(obj.getInt("id"));
-                        item.setName(obj.getString("name"));
-                        item.setImage(obj.getString("logo"));
-                        item.setDescription(obj.getString("description"));
-                        item.setType(obj.getString("type_id"));
-                        item.setAddres(obj.getString("addres"));
-                        //add to array
-                        array.add(item);
-                    }catch(JSONException ex){
-                        ex.printStackTrace();
-                    }
-                }
-                adapter.notifyDataSetChanged();
+        Cursor c=RefreshService.mLocationsDB.getAllLocations();
+        if (c.moveToFirst()) {
+            //Recorremos el cursor hasta que no haya más registros
+            do {
+                Motel item = new Motel();
+                item.setId(c.getInt(0));
+                item.setName(c.getString(4));
+                item.setImage(c.getString(5));
+                item.setDescription(c.getString(3));
+                item.setType(c.getString(6));
+                item.setAddres(c.getString(7));
+                //add to array
+                Log.v("prueba", item.getName());
+                array.add(item);
+            } while (c.moveToNext());
+            adapter.notifyDataSetChanged();
+        }
                 //Crea el evento para ir al perfil del motel
                 listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
@@ -88,23 +81,9 @@ public class best_calification_fragment extends Fragment {
                 });
 
 
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
 
-            }
-        });
-        ;
-        ListarMotelesController.getmInstance().addToRequesQueue(jsonArrayRequest);
 
         return v;
-    }
-    public void hideDialog(){
-        if(dialog !=null){
-            dialog.dismiss();
-            dialog=null;
-        }
     }
 
 }

@@ -16,11 +16,11 @@ import android.widget.TextView;
  * A simple {@link Fragment} subclass.
  */
 public class IndexActivityFragment extends Fragment {
-    Button btnlista;
-    Button btncercanos;
-    Button btnsexshop;
-    Button btnrecomendados;
-    Button btnrecomendaciones;
+    public static Button btnlista;
+    public static Button btncercanos;
+    public static Button btnsexshop;
+    public static Button btnrecomendados;
+    public static Button btnrecomendaciones;
 
     public IndexActivityFragment() {
         // Required empty public constructor
@@ -71,6 +71,12 @@ public class IndexActivityFragment extends Fragment {
                 startActivity(new Intent("telmoapp.recomendations"));
             }
         });
+
+        btnlista.setEnabled(false);
+        btncercanos.setEnabled(false);
+        btnsexshop.setEnabled(false);
+        btnrecomendados.setEnabled(false);
+        btnrecomendaciones.setEnabled(false);
         return v;
     }
 

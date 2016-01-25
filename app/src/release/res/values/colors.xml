@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="click_start_color">#18287e</color>
+    <color name="click_end_color">#68bede</color>
+    <color name="click_end_color_bg">#0a158f</color>
+    <color name="click_start_color_bg">#0a158f</color>
+
+    <color name="theme_primary">#212121</color>
+    <color name="theme_dark">#9E9E9E</color>
+    <color name="theme_accent">#3326dd</color>
+    <color name="theme_components">#FFD600</color>
+    <color name="theme_botton">#D50000</color>
+    <color name="theme_white">#FFFFFF</color>
+</resources>

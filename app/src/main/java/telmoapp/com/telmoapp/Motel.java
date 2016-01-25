@@ -1,10 +1,36 @@
 package telmoapp.com.telmoapp;
-
 /**
  * Created by agude on 03/11/2015.
  */
 public class Motel {
-    public String name, description, type, addres, image, urlPage, urlVideo, city;
+    public String name;
+    public String description;
+    public String type;
+    public String addres;
+    public String image;
+    public String urlPage;
+    public String urlVideo;
+    public String city;
+
+    public String getLng() {
+        return lng;
+    }
+
+    public void setLng(String lng) {
+        this.lng = lng;
+    }
+
+    public String lng;
+
+    public String getLat() {
+        return lat;
+    }
+
+    public void setLat(String lat) {
+        this.lat = lat;
+    }
+
+    public String lat;
     public int id;
 
     public String getUrlPage() {
